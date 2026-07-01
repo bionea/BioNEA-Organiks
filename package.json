@@ -1,17 +1,21 @@
 {
-  "name": "node",
+  "name": "bionea-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API Node.js — intermediaria entre ESP32 y Supabase para BioNEA Organiks",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "express": "^5.2.1",
-    "pg": "^8.21.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
